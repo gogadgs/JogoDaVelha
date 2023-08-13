@@ -1,0 +1,97 @@
+@import url('reset.css');
+
+/* elementos especificos  */
+
+header nav{
+    background-color: #01579b;
+    min-height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+header nav ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  
+}
+header nav ul li{
+    margin: 0 1rem;
+    list-style: none;
+    position:relative;
+   
+   
+   
+}
+
+header nav ul li a{
+    text-decoration: none;
+    padding:1rem 1rem;
+   
+}
+header nav ul li :hover{
+  
+    border-radius:20px    ;
+    -webkit-border-radius:20px    ;
+    -moz-border-radius:20px    ;
+    -ms-border-radius:20px    ;
+    -o-border-radius:20px    ;
+    box-shadow: 0 0 5px rgba(194, 16, 16, 0.3);
+    padding: 1rem 1rem; 
+    color:  #000;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/*  seção conteudo principal */
+main .conteudo-principal{
+    display:flex;
+    background:var(--cor-de-fundo);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height:83vh;
+}
+main .conteudo-principal h1{
+    font-size:2rem;
+    margin:1rem 0;
+    text-transform: capitalize;
+}
+main .conteudo-principal .box{
+   min-width: 20rem;
+
+}
+
+main .conteudo-principal .box .quadrado{
+    text-align:center;
+    min-width:28%;
+    max-width: 28%;
+    background:#eee;
+    display:inline-block;
+   
+    font-size:60px;
+    margin:2% 2%;
+    cursor:pointer;
+    color:#eee;
+}
+
+main .conteudo-principal .jogador, .vencedor{
+    font-size:2rem;
+    margin-top:1.2rem;
+
+}
+main .conteudo-principal .botao button{
+    margin-top:4rem;
+    width:15rem;
+    height:3vh;
+    background:#eee;
+    cursor:pointer;
+    border:1px solid #eee;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    text-transform: uppercase;
+}
+
+

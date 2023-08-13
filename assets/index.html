@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jogo da velha</title>
+        <meta name="description" content="jogo da velha" author="Douglas Godois dos Santos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+        <link rel="website icon" href="./IMG/jogo-da-velha.png" type="image/x-icon">
+        <link rel="apple-touch-icon" type="favicon" sizes="192x192" href="./IMG/jogo-da-velha.png">
+        <!-- <meta http-equiv="refresh" content="0; url=http://www.google.com"> -->
+       <!--  <meta http-equiv="refresh" content="5"> -->
+    </head>
+    <body>
+      <header>
+        <div class="conteudo-cabecalho">
+            <nav>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href=""> Portfolio</a></li>
+                    <li><a href="">Linkedin</a></li>
+                </ul>
+            </nav>
+        </div>
+
+      </header>
+      <main>
+         <div class="conteudo-principal">
+            <h1>Jogo da Velha</h1>
+
+
+            <!--designer pattern para estilizar a pagina -->
+            <div class="box">
+                <div class="quadrado" id="1" onclick="escolherQuadrado(this.id);">-</div>
+                <div class="quadrado" id="2" onclick="escolherQuadrado(this.id);">-</div>
+                <div class="quadrado" id="3" onclick="escolherQuadrado(this.id);">-</div>
+            </div>
+            <div class="box">
+                <div class="quadrado" id="4"onclick="escolherQuadrado(this.id);">-</div>
+                <div class="quadrado" id="5"onclick="escolherQuadrado(this.id);">-</div>
+                <div class="quadrado" id="6"onclick="escolherQuadrado(this.id);">-</div>
+            </div>
+            <div class="box">
+                <div class="quadrado" id="7"onclick="escolherQuadrado(this.id);">-</div>
+                <div class="quadrado" id="8"onclick="escolherQuadrado(this.id);">-</div>
+                <div class="quadrado" id="9"onclick="escolherQuadrado(this.id);">-</div>
+            </div>
+
+            <!-- visual contador de vitorias  -->
+            
+            <div class="jogador">
+                <label for="">
+                    Jogador:
+                </label>
+                <label id="jogador-selecionado" for="">
+
+                </label>
+            </div>
+            <div class="vencedor">
+                <label for="">
+                    Vencedor:
+                </label>
+                <label id="vencedor-selecionado" for="">
+
+                </label>
+                
+            </div>
+            <div class="botao">
+                <button type="button" onclick="reiniciarComBotao();">
+                    Reiniciar
+                </button>
+            </div>
+        </div>
+        
+      </main>
+
+      <footer>
+        <p>&copy; 2023 - Desenvolvido por:Douglas Godois dos Santos <NAME></p>
+      </footer>
+        
+        <script   src="./JS/index.js" async defer></script>
+    </body>
+</html>
